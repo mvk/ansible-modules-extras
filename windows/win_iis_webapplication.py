@@ -65,6 +65,7 @@ options:
     required: false
     default: False
     aliases: []
+    version_added: '2.2'
 author: Henrik Wallström
 '''
 

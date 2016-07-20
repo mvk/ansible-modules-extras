@@ -61,7 +61,7 @@ options:
     aliases: []
   force:
     description:
-      - update even if old physical_path is missing or equal to current
+      - force update even if old physical_path is missing or equal to current
     required: false
     default: False
     aliases: []

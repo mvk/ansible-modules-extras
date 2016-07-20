@@ -34,7 +34,7 @@ If ($site -eq $FALSE) {
     Fail-Json (New-Object psobject) "missing required argument: site";
 }
 
-# force update even if folders re equal or old is missing
+# force update even if old physical_path is missing or equal to physical_path
 $force = Get-Attr $params "force" $FALSE | ConvertTo-Bool
 
 # State parameter
@@ -107,7 +107,6 @@ try {
 
       $app_folder = Get-Item $application.PhysicalPath
       if ($force -eq $true) {
-        # point at an existing folder
         $app_folder = Get-Item $env:TEMP
       }
 

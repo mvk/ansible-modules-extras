@@ -59,6 +59,12 @@ options:
     required: false
     default: null
     aliases: []
+  force:
+    description:
+      - update even if old physical_path is missing or equal to current
+    required: false
+    default: False
+    aliases: []
 author: Henrik Wallström
 '''
 
